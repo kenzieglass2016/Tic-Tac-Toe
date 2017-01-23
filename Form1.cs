@@ -193,7 +193,7 @@ namespace FormExample
                     {
                         Rectangle rect = new Rectangle(x + i * cellSize, y + j * cellSize, cellSize, cellSize);
                         e.Graphics.DrawRectangle(Pens.Black, rect);
-                        System.Drawing.Font font = new System.Drawing.Font("Ubuntu", cellSize * 3 * 72 / 96 / 4);
+                        System.Drawing.Font font = new System.Drawing.Font("Comic Sans MS", cellSize * 3 * 72 / 96 / 4);
                         if (board[j][i] == 1)
                         {
                             e.Graphics.DrawString("X", font, Brushes.DarkRed, x + (cellSize / 8) + (j * cellSize), y + (cellSize / 8) + (i * cellSize) - (cellSize / 20));
